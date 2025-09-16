@@ -1,12 +1,10 @@
-# QT-Pie 🥧
+# Quick Trigger Pie Menu (QT-Pie 🥧)
 A simple Blender addon that adds a pie menu across editors for faster, left-hand access to common actions.
 * This add-on replaces Blender's Quick Favorites hotkey with an easily accessible pie menu.
-* The default entries target actions whose stock hotkeys are awkward to hit with the left hand while the right hand stays on the mouse (e.g., Ctrl-P, O, Insert Keyframe)
-* **Note: It's currently not possible to customize the pie menu inside Blender's UI - you need to change the code yourself. An in-Blender UI to customize the pie menu entries (similar to the current implementation of Quick Favorites) is planned**
+* The default entries target actions whose default hotkeys are awkward to hit with the left hand while the right hand stays on the mouse (e.g., Ctrl-P, O, Insert Keyframe).
+* **Note: It's currently not possible to customize the pie menu inside Blender's UI - you need to change the code yourself. An in-Blender UI to customize the pie menu entries (similar to the current implementation of Quick Favorites) is planned**.
 
 <img width="759" height="419" alt="QT-Pie_v1 0 0" src="https://github.com/user-attachments/assets/eaa60b3d-2f4f-44be-a8a1-5b1be881a4ae" />
-
-# Quick Trigger Pie Menu (QT-Pie)
 
 ## Requirements
 
