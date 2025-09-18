@@ -4,7 +4,8 @@ A simple Blender addon that adds a pie menu across editors for faster, left-hand
 * The default entries target actions whose default hotkeys are awkward to hit with the left hand while the right hand stays on the mouse (e.g., Ctrl-P, O, Insert Keyframe).
 * **Note: It's currently not possible to customize the pie menu inside Blender's UI - you need to change the code yourself. An in-Blender UI to customize the pie menu entries (similar to the current implementation of Quick Favorites) is planned**.
 
-<img width="785" height="419" alt="QT-Pie_v1 02" src="https://github.com/user-attachments/assets/5d306fc7-3064-4472-a09a-81bd3ba5580c" />
+<img width="813" height="498" alt="QT-Pie_v1 0 3 png" src="https://github.com/user-attachments/assets/f73a74b8-7bbd-44ee-bb12-4584209af04d" />
+
 
 ## Requirements
 
