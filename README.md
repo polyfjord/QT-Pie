@@ -2,7 +2,7 @@
 A simple Blender addon that adds a pie menu across editors for faster, left-hand access to common actions.
 * This add-on replaces Blender's Quick Favorites hotkey with an easily accessible pie menu.
 * The default entries target actions whose default hotkeys are awkward to hit with the left hand while the right hand stays on the mouse (e.g., Ctrl-P, O, Insert Keyframe).
-* **Note: It's currently not possible to customize the pie menu inside Blender's UI - you need to change the code yourself. An in-Blender UI to customize the pie menu entries (similar to the current implementation of Quick Favorites) is planned**.
+* In the Settings of the add-on, you can edit each of the 8 slices with either **Label**, **Operator** (`category.operator`), or optional **Icon** to add your own custom entry to the Pie Menu.
 
 <img width="813" height="498" alt="QT-Pie_v1 0 3 png" src="https://github.com/user-attachments/assets/f73a74b8-7bbd-44ee-bb12-4584209af04d" />
 
@@ -13,27 +13,32 @@ A simple Blender addon that adds a pie menu across editors for faster, left-hand
 
 ## How to install
 
-1. `Edit → Preferences → Add-ons → Install…`
-2. Select `Quick_Trigger_Pie_Menu_QT-Pie_v1_0.py`
-3. Enable the add-on.
+1. Go to **Edit → Preferences → Add-ons**
+2. In the top-right corner, click the small drop-down arrow 🔽
+3. Select `Install from Disk...`
+4. Find and select the downloaded .py file `QT-Pie_v*.py` (latest release [here](https://github.com/polyfjord/QT-Pie/releases/))
+5. The addon will be enabled with an icon ✅ next to it
 
 ## How to use
 
-* Once installed, press the hotkey **Q** to open the pie menu.
+Once installed, press the hotkey **Q** to open the pie menu.
 
-### Pie entries (8-way)
+### Default pie entries (8 slices)
 
-* **Left:** Set Parent To Object
-* **Right:** Pivot → 3D Cursor
-* **Up:** Pivot → Median Point
-* **Down:** Pivot → Individual Origins
-* **Up-Right:** Toggle Proportional Editing
-* **Up-Left:** View Render (F11)
-* **Down-Left:** Render Image (F12)
-* **Down-Right:** Insert Keys
+* ⬅️ Set Parent To Object
+* ➡️ Pivot → 3D Cursor
+* ⬆️ Pivot → Median Point
+* ⬇️ Pivot → Individual Origins
+* ↗️ Toggle Proportional Editing
+* ↖️ View Render (F11)
+* ↙️ Render Image (F12)
+* ↘️ Insert Keys
 
-> Note: Some entries are context-sensitive (e.g., parenting requires a valid 3D selection).
+## Settings
 
-## Editors
+* In **Edit → Preferences → Add-ons → QT-Pie**, open **Settings (Advanced)** to edit any of the 8 slices with either **Label**, **Operator** (`category.operator` like `view3d.cursor3d`), or optional **Icon**. Includes a **Reset** button to restore default pie entries. 
 
-Works in the 3D View and other editors including: **Image**, **Node**, **Graph**, **Dopesheet**, **NLA**, **Sequencer**, **Movie Clip**, **Outliner**, **Properties**, **Text**, **Console**.
+<img width="909" height="595" alt="2025-10-23 13_20_21-Preferences" src="https://github.com/user-attachments/assets/6ef0f2e9-dba1-47ff-b603-bd2002334522" />
+
+## Forks and collaborations
+If you are a developer and want to improve this addon, please feel free to fork the repository or send me a DM on instagram ([@polyfjord](https://www.instagram.com/polyfjord/))!
