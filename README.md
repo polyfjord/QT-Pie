@@ -40,5 +40,7 @@ Once installed, press the hotkey **Q** to open the pie menu.
 
 <img width="909" height="595" alt="2025-10-23 13_20_21-Preferences" src="https://github.com/user-attachments/assets/6ef0f2e9-dba1-47ff-b603-bd2002334522" />
 
-## Forks and collaborations
-If you are a developer and want to improve this addon, please feel free to fork the repository or send me a DM on instagram ([@polyfjord](https://www.instagram.com/polyfjord/))!
+## Collaborations
+If you are a developer and want to improve this project, please feel free to open a PR or create an issue.
+
+Also, if you know your way around Blender/python/web apps/LLMs and want to brainstorm or collab on creative tools, please feel free to send me a DM on  [instagram](https://www.instagram.com/polyfjord/) or [bluesky](https://bsky.app/profile/polyfjord.bsky.social) with some of your work or ideas, and perhaps maybe we can make something cool together! 💡
