@@ -43,4 +43,4 @@ Once installed, press the hotkey **Q** to open the pie menu.
 ## Collaborations
 If you are a developer and want to improve this project, please feel free to open a PR or create an issue.
 
-Also, if you know your way around Blender/python/web apps/LLMs and want to brainstorm or collab on creative tools, please feel free to send me a DM on  [instagram](https://www.instagram.com/polyfjord/) or [bluesky](https://bsky.app/profile/polyfjord.bsky.social) with some of your work or ideas, and perhaps maybe we can make something cool together! 💡
+Also, if you know your way around Blender/python/web apps/LLMs and want to brainstorm or collab on creative tools, please feel free to send me a DM on  [instagram](https://www.instagram.com/polyfjord/) or [bluesky](https://bsky.app/profile/polyfjord.com) with some of your work or ideas, and perhaps maybe we can make something cool together! 💡
