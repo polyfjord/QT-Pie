@@ -13,11 +13,12 @@ A simple Blender addon that adds a pie menu across editors for faster, left-hand
 
 ## How to install
 
-1. Go to **Edit → Preferences → Add-ons**
-2. In the top-right corner, click the small drop-down arrow 🔽
-3. Select `Install from Disk...`
-4. Find and select the downloaded .py file `QT-Pie_v*.py` (latest release [here](https://github.com/polyfjord/QT-Pie/releases/))
-5. The addon will be enabled with an icon ✅ next to it
+1. Download the `QT-Pie.py` file from this repository
+2. Go to **Edit → Preferences → Add-ons**
+3. In the top-right corner, click the small drop-down arrow 🔽
+4. Select `Install from Disk...`
+5. Find and select the downloaded `QT-Pie.py` file
+6. The addon will be enabled with an icon ✅ next to it
 
 ## How to use
 
