@@ -13,11 +13,12 @@ A simple Blender addon that adds a pie menu across editors for faster, left-hand
 
 ## How to install
 
-1. Go to **Edit → Preferences → Add-ons**
-2. In the top-right corner, click the small drop-down arrow 🔽
-3. Select `Install from Disk...`
-4. Find and select the downloaded .py file `QT-Pie_v*.py` (latest release [here](https://github.com/polyfjord/QT-Pie/releases/))
-5. The addon will be enabled with an icon ✅ next to it
+1. Download the `QT-Pie.py` file from this repository
+2. Go to **Edit → Preferences → Add-ons**
+3. In the top-right corner, click the small drop-down arrow 🔽
+4. Select `Install from Disk...`
+5. Find and select the downloaded `QT-Pie.py` file
+6. The addon will be enabled with an icon ✅ next to it
 
 ## How to use
 
@@ -39,6 +40,29 @@ Once installed, press the hotkey **Q** to open the pie menu.
 * In **Edit → Preferences → Add-ons → QT-Pie**, open **Settings (Advanced)** to edit any of the 8 slices with either **Label**, **Operator** (`category.operator` like `view3d.cursor3d`), or optional **Icon**. Includes a **Reset** button to restore default pie entries. 
 
 <img width="909" height="595" alt="2025-10-23 13_20_21-Preferences" src="https://github.com/user-attachments/assets/6ef0f2e9-dba1-47ff-b603-bd2002334522" />
+
+## Available QT-Pie Operators
+
+The addon includes several custom operators that you can use in your pie menu configurations:
+
+### Rendering Operators
+* `view3d.qtpie_render_image` - Render the current frame (F12)
+* `view3d.qtpie_render_animation` - Render full animation sequence (Ctrl+F12)
+* `view3d.qtpie_render_viewport_anim` - Render viewport animation (OpenGL/Workbench render)
+* `view3d.qtpie_view_render` - Show the most recent render result (F11)
+
+### Pivot Point Operators
+* `view3d.qtpie_set_pivot` - Smart pivot point switching (context-aware for different editors)
+  - Automatically adapts to 3D View, Image Editor, Graph Editor, etc.
+
+### Transform Operators
+* `view3d.toggle_proportional_edit_smart` - Toggle proportional editing (auto-detects Object/Edit mode)
+
+### Object Operators
+* `view3d.qtpie_parent_set_object` - Parent selected objects to the active object
+
+### Animation Operators
+* `view3d.qtpie_insert_keys` - Insert keyframes with current keying settings
 
 ## Collaborations
 If you are a developer and want to improve this project, please feel free to open a PR or create an issue.
