@@ -41,6 +41,29 @@ Once installed, press the hotkey **Q** to open the pie menu.
 
 <img width="909" height="595" alt="2025-10-23 13_20_21-Preferences" src="https://github.com/user-attachments/assets/6ef0f2e9-dba1-47ff-b603-bd2002334522" />
 
+## Available QT-Pie Operators
+
+The addon includes several custom operators that you can use in your pie menu configurations:
+
+### Rendering Operators
+* `view3d.qtpie_render_image` - Render the current frame (F12)
+* `view3d.qtpie_render_animation` - Render full animation sequence (Ctrl+F12)
+* `view3d.qtpie_render_viewport_anim` - Render viewport animation (OpenGL/Workbench render)
+* `view3d.qtpie_view_render` - Show the most recent render result (F11)
+
+### Pivot Point Operators
+* `view3d.qtpie_set_pivot` - Smart pivot point switching (context-aware for different editors)
+  - Automatically adapts to 3D View, Image Editor, Graph Editor, etc.
+
+### Transform Operators
+* `view3d.toggle_proportional_edit_smart` - Toggle proportional editing (auto-detects Object/Edit mode)
+
+### Object Operators
+* `view3d.qtpie_parent_set_object` - Parent selected objects to the active object
+
+### Animation Operators
+* `view3d.qtpie_insert_keys` - Insert keyframes with current keying settings
+
 ## Collaborations
 If you are a developer and want to improve this project, please feel free to open a PR or create an issue.
 

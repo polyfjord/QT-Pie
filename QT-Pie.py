@@ -1049,6 +1049,40 @@ class VIEW3D_OT_qtpie_view_render(bpy.types.Operator):
         return {'FINISHED'}
 
 
+class VIEW3D_OT_qtpie_render_animation(bpy.types.Operator):
+    bl_idname = "view3d.qtpie_render_animation"
+    bl_label = "Render Animation"
+    bl_description = "Render the full animation sequence"
+    bl_options = {"REGISTER", "UNDO"}
+
+    def execute(self, context):
+        def _delayed():
+            try:
+                bpy.ops.render.render('INVOKE_DEFAULT', animation=True)
+            except Exception:
+                pass
+            return None
+        bpy.app.timers.register(_delayed, first_interval=0.0)
+        return {'FINISHED'}
+
+
+class VIEW3D_OT_qtpie_render_viewport_anim(bpy.types.Operator):
+    bl_idname = "view3d.qtpie_render_viewport_anim"
+    bl_label = "Render Viewport Animation"
+    bl_description = "Render viewport animation (OpenGL render)"
+    bl_options = {"REGISTER", "UNDO"}
+
+    def execute(self, context):
+        def _delayed():
+            try:
+                bpy.ops.render.opengl('INVOKE_DEFAULT', animation=True)
+            except Exception:
+                pass
+            return None
+        bpy.app.timers.register(_delayed, first_interval=0.0)
+        return {'FINISHED'}
+
+
 # --- Wrapper operators to provide meaningful tooltips -------------------------
 class VIEW3D_OT_qtpie_parent_set_object(bpy.types.Operator):
     bl_idname = "view3d.qtpie_parent_set_object"
@@ -1388,6 +1422,8 @@ classes = (
     VIEW3D_OT_toggle_proportional_edit_smart,
     VIEW3D_OT_qtpie_render_image,
     VIEW3D_OT_qtpie_view_render,
+    VIEW3D_OT_qtpie_render_animation,
+    VIEW3D_OT_qtpie_render_viewport_anim,
     VIEW3D_OT_qtpie_parent_set_object,
     VIEW3D_OT_qtpie_insert_keys,
     VIEW3D_OT_qtpie_set_pivot,
